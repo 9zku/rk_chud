@@ -69,7 +69,7 @@ function App() {
   return (
     <div className="min-h-screen">
       {showHud && playerLoaded && <StatusHud />}
-      {inVehicle && showCarHud && playerLoaded && <CarHud />}
+      {showCarHud && playerLoaded && <CarHud />}
     </div>
   )
 }
