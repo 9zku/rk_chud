@@ -39,7 +39,7 @@ function App() {
     setDirection(data.direction || '')
     
     if (data.inVehicle && playerLoaded) {
-      setShowCarHud(true)
+      setShowCarHud((prev) => prev)
     } else if (!data.inVehicle) {
       setShowCarHud(false)
     }
@@ -69,7 +69,7 @@ function App() {
   return (
     <div className="min-h-screen">
       {showHud && playerLoaded && <StatusHud />}
-      {showCarHud && playerLoaded && <CarHud />}
+      {inVehicle && showCarHud && playerLoaded && <CarHud />}
     </div>
   )
 }
