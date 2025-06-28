@@ -1,5 +1,5 @@
 return {
-    debug = true, -- the debug in this resource is very minimal, so it's not really useful.
+    debug = false, -- the debug in this resource is very minimal, so it's not really useful.
 
     framework = 'esx', -- Supported Frameworks: esx, ox, qb, qbx, standalone, custom. (For custom you must create your own bridge.)
 
