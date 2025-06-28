@@ -55,7 +55,7 @@ function vehThreads:startVehicleThread()
                 lastControlCheck = currentTime
             end
             
-            Wait(50) 
+            Wait(450) 
         end
         
         nui:message('setVehicleState', { 
