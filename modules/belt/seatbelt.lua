@@ -6,6 +6,7 @@ local config = require('config')
 local utils = require('shared.utils')
 local seatbelt = {}
 
+---@return boolean | nil
 function seatbelt:Togglebelt()
     if not IsPedInAnyVehicle(PlayerPedId(), false) then return end
 
@@ -23,7 +24,7 @@ function seatbelt:Togglebelt()
 
     local currentBelt = LocalPlayer.state.seatbelt or false
     local newBelt = not currentBelt
-    
+
     LocalPlayer.state.seatbelt = newBelt
 
     if not newBelt then
@@ -53,21 +54,24 @@ if config.seatbelt == 'default' then
 end
 
 return {
-    GetbeltState = function() 
+
+    ---@return boolean
+    GetbeltState = function()
         if config.seatbelt == 'qbx' then
             return (LocalPlayer.state.seatbelt or false) or (LocalPlayer.state.harness or false)
         end
-        
+
         if config.seatbelt == 'esx' then
             return exports['esx_cruisecontrol']:isSeatbeltOn()
         end
-        
+
         if config.seatbelt == 'qb' then
             return exports['qb-smallresources']:HasSeatbeltOn() or exports['qb-smallresources']:HasHarness()
         end
-        
-        return LocalPlayer.state.seatbelt or false 
+
+        return LocalPlayer.state.seatbelt or false
     end,
+
     Togglebelt = seatbelt.Togglebelt,
     ResetBelt = seatbelt.ResetBelt
 }

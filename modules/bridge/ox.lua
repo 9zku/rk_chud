@@ -24,6 +24,7 @@ function framework.getPlayerStatus()
 	}
 end
 
+---@return boolean
 function framework.isPlayerLoaded()
 	return playerLoaded
 end
