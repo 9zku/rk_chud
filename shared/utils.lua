@@ -16,4 +16,16 @@ function utils.notify(msg, type)
     })
 end 
 
+function utils.getInventoryStateBag()
+    if GetResourceState('ox_inventory') == 'started' then
+        return 'invOpen'
+    end
+    
+    if GetResourceState('qb-inventory') == 'started' then
+        return 'inv_busy'
+    end
+    
+    return 'invOpen'
+end
+
 return utils
