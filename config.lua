@@ -3,9 +3,11 @@ return {
 
     framework = 'esx', -- Supported Frameworks: esx, ox, qb, qbx, standalone, custom. (For custom you must create your own bridge.)
 
+    seatbelt = 'default', -- Options: 'default' (built-in logic), 'esx' (esx_cruisecontrol), 'qbx' (qbx_seatbelt), or 'qb' (qb-smallresources)
+
     speedunit = 'mph', -- mph or kph.
 
-    ShouldHudHide = true, -- Should the hud hide when pause menu/inventory is active? (The inventory feature is supported by ox and qb inventory, to add your own go to shared/utils.lua)
+    ShouldHudHide = true, -- Should the hud hide when pause menu/inventory is active? INVENTORY ONLY WORKS IF ITS OX! 
     
     DisableExitWithBelt = true, -- Should F/Exiting vehicles be disabled when a seatbelt is on?
 
