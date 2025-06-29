@@ -4,3 +4,8 @@ This is a simple hud made for fun and something to post for free, it lacks featu
 - **Supported Frameworks:** ESX, QB, QBOX, OX, Standalone (If ran on standalone hunger and thirst are disabled completey)
 - **Dependencies:** ox_lib
 - **Preview:** [Youtube](https://youtu.be/_WwuhDGCQig)
+
+## **Important!!**
+This was made because someone leaked a HUD from a well known server (New Leaf) and uploaded it to GitHub, claiming it as their own. I made this to give people a similar styled HUD, but built from scratch with 100% web source code, no stolen code ❌. I’ve already said what needs to be said, click the image below if you want to see more.
+
+- https://imgur.com/wGpM7Gz
