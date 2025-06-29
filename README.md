@@ -10,5 +10,5 @@ This was made because someone leaked a HUD from a well known server (New Leaf) a
 
 - https://imgur.com/wGpM7Gz
 
-- ## **Credits**
+## **Credits**
 - FULL credits go to [svdden](https://github.com/RealSvdden) as he made the original HUD that got leaked and mine is heavily inspired off his design.
