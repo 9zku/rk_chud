@@ -12,10 +12,11 @@ end)
 function framework.getPlayerStatus()
     return {
         hunger = 0, -- Disabled
-        thirst = 0  -- Disabled 
+        thirst = 0  -- Disabled
     }
 end
 
+---@return boolean
 function framework.isPlayerLoaded()
     return playerLoaded
 end
