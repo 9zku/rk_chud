@@ -5,7 +5,7 @@ return {
 
     speedunit = 'mph', -- mph or kph.
 
-    ShouldHudHide = true, -- Should the hud hide when pause menu/inventory is active? INVENTORY ONLY WORKS IF ITS OX! 
+    ShouldHudHide = true, -- Should the hud hide when pause menu/inventory is active? (The inventory feature is supported by ox and qb inventory, to add your own go to shared/utils.lua)
     
     DisableExitWithBelt = true, -- Should F/Exiting vehicles be disabled when a seatbelt is on?
 
