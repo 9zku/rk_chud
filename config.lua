@@ -11,7 +11,7 @@ return {
     ---@type "mph" | "kph" mph or kph.
     speedunit = 'mph',
 
-    ---@type boolean Should the hud hide when pause menu/inventory is active? INVENTORY ONLY WORKS IF ITS OX!
+    ---@type boolean Should the hud hide when pause menu/inventory is active? Works with QB and OX inventory
     ShouldHudHide = true,
 
     ---@type boolean Should F/Exiting vehicles be disabled when a seatbelt is on?
