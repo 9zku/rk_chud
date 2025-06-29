@@ -9,3 +9,6 @@ This is a simple hud made for fun and something to post for free, it lacks featu
 This was made because someone leaked a HUD from a well known server (New Leaf) and uploaded it to GitHub, claiming it as their own. I made this to give people a similar styled HUD, but built from scratch with 100% web source code, no stolen code ❌ (Since theres only has compiled code, as you cannot Server D*** React/Svelte Code). I’ve already said what needs to be said, click the image below if you want to see more.
 
 - https://imgur.com/wGpM7Gz
+
+- ## **Credits**
+- FULL credits go to [svdden](https://github.com/RealSvdden) as he made the original HUD that got leaked and mine is heavily inspired off his design.
