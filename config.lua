@@ -41,5 +41,8 @@ return {
         [20] = false, -- WEAPON_WHEEL_STATS
         [21] = false, -- HUD_COMPONENTS
         [22] = false  -- HUD_WEAPONS
-    }
+    },
+
+    ---@type string The command to toggle the hud.
+    command = 'togglehud'
 }
