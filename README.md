@@ -12,3 +12,7 @@ This was made because someone leaked a HUD from a well known server (New Leaf) a
 
 ## **Credits**
 - FULL credits go to [svdden](https://github.com/RealSvdden) as he made the original HUD that got leaked and mine is heavily inspired off his design.
+
+## **Documentation**
+- [Full documenation](https://rk0-1.gitbook.io/rk.dev/free-releases/rk_chud) 
+- exports.rk_chud:toggleHud() 
