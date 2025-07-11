@@ -2,12 +2,15 @@ local config = require('config')
 
 local utils = {}
 
+---@param message string
 function utils.Dbug(message)
     if config.debug then
         print('^3[DEBUG] ' .. message .. '^0')
     end
 end
 
+---@param msg string
+---@param type "inform" | "success" | "error" | "warning"
 function utils.notify(msg, type)
     lib.notify({
         title = 'HUD',
