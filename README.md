@@ -1,8 +1,8 @@
 ## **A Modern, Lightweight HUD for Everyone (Free & Open Source)**
 This is a simple hud made for fun and something to post for free, it lacks features but looks nice and good for servers going for a simple look, I haven't tested this on any resolution/aspect ratio other then 1920x1080 16:9, so it may not work on other resolutions good. 
 
-- **Supported Frameworks:** ESX, QB, QBOX, OX, Standalone (If ran on standalone hunger and thirst are disabled completey)
-- **Dependencies:** ox_lib
+- **Supported Frameworks:** [ESX](https://github.com/esx-framework/esx_core/tree/main/%5Bcore%5D), [QB](https://github.com/qbcore-framework/qb-core), [QBOX](https://github.com/Qbox-project/qbx_core/tree/main), [OX](https://github.com/CommunityOx/ox_core), Standalone (If ran on standalone hunger and thirst are disabled completey)
+- **Dependencies:** [ox_lib](https://github.com/CommunityOx/ox_lib)
 - **Preview:** [Youtube](https://youtu.be/_WwuhDGCQig)
 
 ## **Important!!**
