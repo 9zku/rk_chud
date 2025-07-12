@@ -29,9 +29,9 @@ function seatbelt:Togglebelt()
 
     if not newBelt then
         SetFlyThroughWindscreenParams(35.0, 40.0, 17.0, 2000.0)
-        SetPedConfigFlag(PlayerPedId(), 32, true)
+        SetPedConfigFlag(cache.ped, 32, true)
     else
-        SetPedConfigFlag(PlayerPedId(), 32, false)
+        SetPedConfigFlag(cache.ped, 32, false)
     end
 
     utils.notify(newBelt and 'Seatbelt fastened' or 'Seatbelt unfastened', newBelt and 'success' or 'error')
