@@ -1,18 +1,23 @@
-local config = require('config')
+local config = require("config")
 
-if config.framework ~= 'standalone' then return end
+if config.framework ~= "standalone" then
+    return
+end
 
 local framework = {}
 local playerLoaded = false
 
-AddEventHandler('PlayerSpawned', function()
-    playerLoaded = true
-end)
+AddEventHandler(
+    "PlayerSpawned",
+    function()
+        playerLoaded = true
+    end
+)
 
 function framework.getPlayerStatus()
     return {
         hunger = 0, -- Disabled
-        thirst = 0  -- Disabled
+        thirst = 0 -- Disabled
     }
 end
 
