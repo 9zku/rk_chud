@@ -21,7 +21,7 @@ const CarHud = () => {
   return (
     <>
       {/* MAP BORDER */}
-      <div className="fixed bottom-8 left-4 w-[328px] h-[200px] border border-white rounded-lg">
+      <div className="fixed bottom-8 left-4 2k:left-6 2k:bottom-10 4k:left-8 4k:bottom-12 minimap-border-w h-minimap-border-h 2k:w-minimap-border-w-2k 2k:h-minimap-border-h-2k 4k:w-minimap-border-w-4k 4k:h-minimap-border-h-4k border border-white rounded-lg">
         {/* COMPASS */}
         <div className="absolute -top-10 left-0 flex items-center gap-1">
           <div className="w-7 h-7">
