@@ -1,12 +1,28 @@
----@description forked from https://github.com/IlMelons/melons_fuel/blob/main/checker.lua
+local versionChecked = false
 
-local ResourceName = GetResourceMetadata(GetCurrentResourceName(), 'name', 0)
+function VersionCheck()
+    if versionChecked then return end
 
-lib.versionCheck(("rk3gaming/%s"):format(ResourceName))
+    versionChecked = true
+    
+    local currentVersion = GetResourceMetadata(GetCurrentResourceName(), 'version', 0)
+    local url = 'https://raw.githubusercontent.com/rk3gaming/version_checks/main/rk_chud.txt'
 
-AddEventHandler('onResourceStart', function(resourceName)
-    if resourceName == ResourceName and ResourceName ~= 'rk_chud' then
-        print('^1[ERROR] This resource must be named rk_chud^7')
-        Wait(10000)
-    end
+    PerformHttpRequest(url, function(statusCode, response, headers)
+        if statusCode == 200 and response then
+            local latestVersion = response:gsub('%s+', '')
+
+            if latestVersion ~= currentVersion then
+                print('^1[UPDATE] New version available! Current: ' .. currentVersion .. ', Latest: ' .. latestVersion .. '^7')
+            else
+                print('^2Resource is up to date!^7')
+            end
+        else
+            print('^3[WARNING] Failed to check for updates. Status code: ' .. (statusCode or 'unknown') .. '^7')
+        end
+    end, 'GET', '', {})
+end
+
+AddEventHandler('onResourceStart', function()
+    VersionCheck()
 end)
