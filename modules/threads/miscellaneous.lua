@@ -5,7 +5,7 @@ local utils = require("shared.utils")
 local miscellaneousThreads = {}
 
 ---@description: this was kinda done shitty and looks confusing.
-function miscThreads:startHideThread()
+function miscellaneousThreads:startHideThread()
     if not config.ShouldHudHide then
         return
     end
@@ -32,7 +32,7 @@ function miscThreads:startHideThread()
     )
 end
 
-function miscThreads:HideMinimap()
+function miscellaneousThreads:HideMinimap()
     CreateThread(
         function()
             while true do
@@ -47,4 +47,5 @@ function miscThreads:HideMinimap()
 end
 
 return miscellaneousThreads
+
 
