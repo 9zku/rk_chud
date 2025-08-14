@@ -2,7 +2,7 @@ local config = require("config")
 local nui = require("modules.nui.client")
 local utils = require("shared.utils")
 
-local miscThreads = {}
+local miscellaneousThreads = {}
 
 ---@description: this was kinda done shitty and looks confusing.
 function miscThreads:startHideThread()
@@ -46,4 +46,5 @@ function miscThreads:HideMinimap()
     )
 end
 
-return miscThreads
+return miscellaneousThreads
+
